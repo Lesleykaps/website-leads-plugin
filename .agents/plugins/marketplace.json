@@ -7,8 +7,9 @@
     {
       "name": "website-leads",
       "source": {
-        "source": "local",
-        "path": "./"
+        "source": "url",
+        "url": "https://github.com/Lesleykaps/website-leads-plugin.git",
+        "ref": "main"
       },
       "policy": {
         "installation": "AVAILABLE",
