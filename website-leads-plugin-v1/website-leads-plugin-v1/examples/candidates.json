@@ -1,0 +1,10 @@
+[
+  {
+    "lead_id": "demo-001", "business_name": "Northstar Repairs Ltd", "city": "Bristol", "country": "United Kingdom",
+    "website_status": "No Website", "verified_problem_summary": "No attributable website found after recorded searches.",
+    "verification_confidence": "Medium", "public_phone": "+44 20 7946 0958", "contact_source_url": "https://directory.example/northstar-repairs",
+    "primary_source_url": "https://profile.example/northstar-repairs", "evidence_url": "https://directory.example/northstar-repairs",
+    "business_specific_fact": "Public listing advertises same-day repair appointments.",
+    "score_website_problem_severity": 25, "score_evidence_strength": 16, "score_business_activity": 12, "score_contactability": 10, "score_enquiry_need": 8, "score_commercial_fit": 8
+  }
+]
