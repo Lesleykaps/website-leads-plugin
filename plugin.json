@@ -1,0 +1,29 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "website-leads",
+  "version": "1.0.0",
+  "description": "Evidence-backed, public-contact-only research for businesses that may need a new or improved website.",
+  "author": {"name": "Cipher Technologies", "email": "info@ciphertechnologies.co.zw", "url": "https://website-leads-plugin.lesleykaps.chatgpt.site"},
+  "homepage": "https://website-leads-plugin.lesleykaps.chatgpt.site",
+  "repository": "https://github.com/Lesleykaps/website-leads-plugin.git",
+  "license": "MIT",
+  "keywords": ["lead research", "website audit", "business research", "xlsx"],
+  "extensions": {"com.openai": {"interface": {
+    "displayName": "Website Leads",
+    "shortDescription": "Research verified website-improvement prospects.",
+    "longDescription": "Research-only workflow that verifies public evidence, website status, and business activity, then exports auditable qualified leads to Excel. It never contacts prospects.",
+    "developerName": "Cipher Technologies",
+    "category": "Productivity",
+    "websiteURL": "https://website-leads-plugin.lesleykaps.chatgpt.site",
+    "privacyPolicyURL": "https://website-leads-plugin.lesleykaps.chatgpt.site/privacy.html",
+    "termsOfServiceURL": "https://website-leads-plugin.lesleykaps.chatgpt.site/terms.html",
+    "capabilities": ["Research", "File creation"],
+    "defaultPrompt": [
+      "Find 15 verified website-improvement leads in Bristol, UK.",
+      "Audit these businesses for website opportunities and create an XLSX report.",
+      "Set up Website Leads with local-only deduplication."
+    ],
+    "brandColor": "#126A73"
+  }}}
+}
+
