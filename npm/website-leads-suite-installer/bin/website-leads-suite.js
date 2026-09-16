@@ -4,22 +4,22 @@
 const { spawnSync } = require("node:child_process");
 const process = require("node:process");
 
-const REPOSITORY = "https://github.com/Lesleykaps/website-leads-plugin.git";
+const REPOSITORY = "https://github.com/Lesleykaps/website-leads-suite.git";
 const MARKETPLACE = "cipher-technologies";
-const PLUGIN = "website-leads";
+const PLUGIN = "website-leads-suite";
 
 function usage(exitCode = 0) {
   const output = `
-Website Leads installer
+Website Leads Suite installer
 
 Usage:
-  npx @ciphertechnologies/website-leads <codex|claude> [--yes]
+  npx @ciphertechnologies/website-leads-suite <codex|claude> [--yes]
 
 Examples:
-  npx @ciphertechnologies/website-leads codex
-  npx @ciphertechnologies/website-leads claude --yes
+  npx @ciphertechnologies/website-leads-suite codex
+  npx @ciphertechnologies/website-leads-suite claude --yes
 
-This installer adds the Cipher Technologies marketplace and installs Website Leads.
+This installer adds the Cipher Technologies marketplace and installs Website Leads Suite.
 It never runs research or contacts any business.\n`;
   (exitCode === 0 ? process.stdout : process.stderr).write(output);
   process.exit(exitCode);
@@ -74,7 +74,7 @@ async function main() {
 
   const marketplaceArgs = target === "codex"
     ? ["plugin", "marketplace", "add", REPOSITORY, "--ref", "main"]
-    : ["plugin", "marketplace", "add", "Lesleykaps/website-leads-plugin"];
+    : ["plugin", "marketplace", "add", "Lesleykaps/website-leads-suite"];
   const pluginArgs = target === "codex"
     ? ["plugin", "add", `${PLUGIN}@${MARKETPLACE}`]
     : ["plugin", "install", `${PLUGIN}@${MARKETPLACE}`];
@@ -93,12 +93,12 @@ async function main() {
     throw new Error("Website Leads marketplace could not be refreshed. Check the marketplace command output above and try again.");
   }
 
-  process.stdout.write("Installing Website Leads…\n");
+  process.stdout.write("Installing Website Leads Suite…\n");
   if (!run(target, pluginArgs)) {
-    throw new Error("Website Leads could not be installed. Check the marketplace command output above and try again.");
+    throw new Error("Website Leads Suite could not be installed. Check the marketplace command output above and try again.");
   }
 
-  const invoke = target === "codex" ? "$website-leads" : "/website-leads:website-leads";
+  const invoke = target === "codex" ? "$website-leads-suite" : "/website-leads-suite:website-leads";
   process.stdout.write(`\nInstalled successfully. In a new ${target === "codex" ? "Codex" : "Claude Code"} chat, use ${invoke}.\n`);
 }
 

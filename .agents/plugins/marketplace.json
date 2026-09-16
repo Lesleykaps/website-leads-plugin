@@ -5,10 +5,10 @@
   },
   "plugins": [
     {
-      "name": "website-leads",
+      "name": "website-leads-suite",
       "source": {
         "source": "local",
-        "path": "./plugins/website-leads"
+        "path": "./plugins/website-leads-suite"
       },
       "policy": {
         "installation": "AVAILABLE",

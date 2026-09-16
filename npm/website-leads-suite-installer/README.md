@@ -9,20 +9,20 @@ The installed suite includes research, review-ready outreach drafting, and optio
 For Codex:
 
 ```text
-npx @ciphertechnologies/website-leads codex
+npx @ciphertechnologies/website-leads-suite codex
 ```
 
 For Claude Code:
 
 ```text
-npx @ciphertechnologies/website-leads claude
+npx @ciphertechnologies/website-leads-suite claude
 ```
 
 Add `--yes` only for a non-interactive, deliberately approved installation.
 
 ## What the installer changes
 
-For the selected host, it adds or refreshes the public Cipher Technologies marketplace and installs the `website-leads` plugin. The host may retain the marketplace if the plugin is later removed; this is normal marketplace behavior.
+For the selected host, it adds or refreshes the public Cipher Technologies marketplace and installs the `website-leads-suite` plugin. The host may retain the marketplace if the plugin is later removed; this is normal marketplace behavior.
 
 ## Prerequisites
 

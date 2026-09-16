@@ -7,22 +7,22 @@ Website Leads Suite is compatible with Claude Code as a skills-only plugin. It i
 In Claude Code, run:
 
 ```text
-/plugin marketplace add Lesleykaps/website-leads-plugin
-/plugin install website-leads@cipher-technologies
+/plugin marketplace add Lesleykaps/website-leads-suite
+/plugin install website-leads-suite@cipher-technologies
 ```
 
 Then invoke the skill as:
 
 ```text
-/website-leads:website-leads Find 10 verified website-improvement opportunities in Harare and export an XLSX report.
-/website-leads:craft-website-outreach Create a review workbook from this approved research report.
+/website-leads-suite:website-leads Find 10 verified website-improvement opportunities in Harare and export an XLSX report.
+/website-leads-suite:craft-website-outreach Create a review workbook from this approved research report.
 ```
 
 For command-line installation, use:
 
 ```text
-claude plugin marketplace add Lesleykaps/website-leads-plugin
-claude plugin install website-leads@cipher-technologies
+claude plugin marketplace add Lesleykaps/website-leads-suite
+claude plugin install website-leads-suite@cipher-technologies
 ```
 
 ## Scope and safeguards

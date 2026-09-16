@@ -1,9 +1,9 @@
 {
-  "name": "website-leads-local",
+  "name": "website-leads-suite-local",
   "interface": {"displayName": "Website Leads Local"},
   "plugins": [{
-    "name": "website-leads",
-    "source": {"source": "local", "path": "./plugins/website-leads"},
+    "name": "website-leads-suite",
+    "source": {"source": "local", "path": "./plugins/website-leads-suite"},
     "policy": {"installation": "AVAILABLE", "authentication": "ON_USE"},
     "category": "Productivity"
   }]

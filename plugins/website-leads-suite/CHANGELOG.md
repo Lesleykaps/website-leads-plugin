@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.0 — 2026-09-16
+
+Renamed the plugin and public repository to Website Leads Suite. Install as `website-leads-suite@cipher-technologies`; the research, drafting, and delivery skills are now available under the `$website-leads-suite` namespace.
+
 ## 1.1.0 — 2026-09-16
 
 Adds the portable Website Leads Suite workflow: evidence-backed research, review-ready outreach drafting, and optional approval-gated delivery. The outreach stages now use an installer-owned configuration and private registry contract; no personal sender identity, drive path, credentials, email account, or scheduling setup is bundled.

@@ -1,6 +1,6 @@
 {
-  "name": "@ciphertechnologies/website-leads",
-  "version": "1.1.0",
+  "name": "@ciphertechnologies/website-leads-suite",
+  "version": "1.0.0",
   "description": "Explicit, cross-platform installer for the Cipher Technologies Website Leads Suite.",
   "license": "MIT",
   "author": {
@@ -10,15 +10,15 @@
   "homepage": "https://website-leads-plugin.lesleykaps.chatgpt.site",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lesleykaps/website-leads-plugin.git",
-    "directory": "npm/website-leads-installer"
+    "url": "git+https://github.com/Lesleykaps/website-leads-suite.git",
+    "directory": "npm/website-leads-suite-installer"
   },
   "bugs": {
-    "url": "https://github.com/Lesleykaps/website-leads-plugin/issues"
+    "url": "https://github.com/Lesleykaps/website-leads-suite/issues"
   },
-  "keywords": ["codex", "claude-code", "plugin", "skills", "website-leads"],
+  "keywords": ["codex", "claude-code", "plugin", "skills", "website-leads-suite"],
   "bin": {
-    "website-leads": "bin/website-leads.js"
+    "website-leads-suite": "bin/website-leads-suite.js"
   },
   "files": ["bin", "README.md", "LICENSE"],
   "engines": {

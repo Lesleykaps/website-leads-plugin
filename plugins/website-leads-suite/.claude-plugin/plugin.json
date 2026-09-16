@@ -1,13 +1,13 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
-  "name": "website-leads",
+  "name": "website-leads-suite",
   "description": "Evidence-backed website lead research, outreach drafting, and optional approval-gated delivery through a user-authorized provider.",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "author": {
     "name": "Cipher Technologies",
     "email": "info@ciphertechnologies.co.zw"
   },
   "homepage": "https://website-leads-plugin.lesleykaps.chatgpt.site",
-  "repository": "https://github.com/Lesleykaps/website-leads-plugin.git",
+  "repository": "https://github.com/Lesleykaps/website-leads-suite.git",
   "license": "MIT"
 }

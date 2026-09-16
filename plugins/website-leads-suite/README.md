@@ -9,11 +9,11 @@ This package can also be installed in Claude Code. See [CLAUDE-CODE.md](CLAUDE-C
 After the npm package is published, users will be able to install the supported host with one explicit command:
 
 ```text
-npx @ciphertechnologies/website-leads codex
-npx @ciphertechnologies/website-leads claude
+npx @ciphertechnologies/website-leads-suite codex
+npx @ciphertechnologies/website-leads-suite claude
 ```
 
-The installer asks for confirmation before changing a marketplace or installing a plugin. Its source and publishing notes are in [`npm/website-leads-installer`](../../npm/website-leads-installer).
+The installer asks for confirmation before changing a marketplace or installing a plugin. Its source and publishing notes are in [`npm/website-leads-suite-installer`](../../npm/website-leads-suite-installer).
 
 Website Leads Suite is a three-stage plugin for finding businesses that may need a new or improved website, preparing evidence-grounded outreach for review, and optionally delivering explicitly approved email campaigns through the installer's own authorized provider.
 
@@ -26,15 +26,15 @@ Website Leads Suite is a three-stage plugin for finding businesses that may need
 
 ## The three-stage workflow
 
-1. `$website-leads:website-leads` researches public business information and produces the four-sheet evidence-backed XLSX report.
-2. `$website-leads:craft-website-outreach` turns eligible report rows into a review workbook and drafts. It never sends.
-3. `$website-leads:send-website-outreach` performs preflight and can deliver only rows marked exactly `Approved`, only through an email provider the installer has connected and authorized.
+1. `$website-leads-suite:website-leads` researches public business information and produces the four-sheet evidence-backed XLSX report.
+2. `$website-leads-suite:craft-website-outreach` turns eligible report rows into a review workbook and drafts. It never sends.
+3. `$website-leads-suite:send-website-outreach` performs preflight and can deliver only rows marked exactly `Approved`, only through an email provider the installer has connected and authorized.
 
 Copy `config/outreach-config.example.json` to a private, user-controlled location and complete it before drafting or delivery. Never commit the completed file, reports, registries, or credentials.
 
 ## Install and test locally
 
-Place this folder at `plugins/website-leads` in a repository, then copy `marketplace.example.json` to `.agents/plugins/marketplace.json` in that repository. Add the marketplace as a local source, restart the desktop app, install the plugin, and test in a new chat. The example path assumes that conventional layout; change only its relative `source.path` if you use another layout.
+Place this folder at `plugins/website-leads-suite` in a repository, then copy `marketplace.example.json` to `.agents/plugins/marketplace.json` in that repository. Add the marketplace as a local source, restart the desktop app, install the plugin, and test in a new chat. The example path assumes that conventional layout; change only its relative `source.path` if you use another layout.
 
 Use a prompt such as: “Find 10 verified website-improvement leads in [location], across at least four industries, and export the report to Excel.” The skill asks for location and target only when they are not safely inferable.
 
