@@ -32,7 +32,8 @@ function executable(name) {
 function run(command, args) {
   const result = spawnSync(executable(command), args, {
     stdio: "inherit",
-    shell: false
+    // Windows command wrappers (.cmd) need a command shell; Unix binaries do not.
+    shell: process.platform === "win32"
   });
   if (result.error && result.error.code === "ENOENT") {
     throw new Error(`${command} was not found. Install ${command === "codex" ? "Codex CLI/Desktop" : "Claude Code"} first, then run this command again.`);
