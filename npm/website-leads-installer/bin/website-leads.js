@@ -26,7 +26,9 @@ It never runs research or contacts any business.\n`;
 }
 
 function executable(name) {
-  return process.platform === "win32" ? `${name}.cmd` : name;
+  // Codex is commonly installed as a .cmd shim on Windows, while the Claude
+  // installer supplies claude.exe. Let cmd.exe resolve the right extension.
+  return name;
 }
 
 function run(command, args) {
