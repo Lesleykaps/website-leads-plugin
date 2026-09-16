@@ -8,16 +8,16 @@
   },
   "plugins": [
     {
-      "name": "website-leads",
-      "description": "Research publicly listed businesses that may need a new or improved website, with evidence and no outreach.",
-      "version": "1.0.0",
+      "name": "website-leads-suite",
+      "description": "Evidence-backed website lead research, review-ready outreach drafting, and optional approval-gated delivery.",
+      "version": "2.0.0",
       "author": {
         "name": "Cipher Technologies",
         "email": "info@ciphertechnologies.co.zw"
       },
-      "source": "./plugins/website-leads",
+      "source": "./plugins/website-leads-suite",
       "category": "productivity",
-      "tags": ["research", "website-audit", "lead-qualification"]
+      "tags": ["research", "website-audit", "lead-qualification", "outreach"]
     }
   ]
 }
