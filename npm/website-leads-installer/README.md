@@ -7,13 +7,13 @@ This package installs the Website Leads plugin from the Cipher Technologies GitH
 For Codex:
 
 ```text
-npx @cipher-technologies/website-leads codex
+npx @ciphertechnologies/website-leads codex
 ```
 
 For Claude Code:
 
 ```text
-npx @cipher-technologies/website-leads claude
+npx @ciphertechnologies/website-leads claude
 ```
 
 Add `--yes` only for a non-interactive, deliberately approved installation.

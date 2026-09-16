@@ -9,8 +9,8 @@ This package can also be installed in Claude Code. See [CLAUDE-CODE.md](CLAUDE-C
 After the npm package is published, users will be able to install the supported host with one explicit command:
 
 ```text
-npx @cipher-technologies/website-leads codex
-npx @cipher-technologies/website-leads claude
+npx @ciphertechnologies/website-leads codex
+npx @ciphertechnologies/website-leads claude
 ```
 
 The installer asks for confirmation before changing a marketplace or installing a plugin. Its source and publishing notes are in [`npm/website-leads-installer`](../../npm/website-leads-installer).

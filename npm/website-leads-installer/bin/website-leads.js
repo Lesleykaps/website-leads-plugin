@@ -13,11 +13,11 @@ function usage(exitCode = 0) {
 Website Leads installer
 
 Usage:
-  npx @cipher-technologies/website-leads <codex|claude> [--yes]
+  npx @ciphertechnologies/website-leads <codex|claude> [--yes]
 
 Examples:
-  npx @cipher-technologies/website-leads codex
-  npx @cipher-technologies/website-leads claude --yes
+  npx @ciphertechnologies/website-leads codex
+  npx @ciphertechnologies/website-leads claude --yes
 
 This installer adds the Cipher Technologies marketplace and installs Website Leads.
 It never runs research or contacts any business.\n`;
