@@ -30,11 +30,15 @@ function executable(name) {
 }
 
 function run(command, args) {
-  const result = spawnSync(executable(command), args, {
+  const options = {
     stdio: "inherit",
-    // Windows command wrappers (.cmd) need a command shell; Unix binaries do not.
-    shell: process.platform === "win32"
-  });
+    shell: false
+  };
+  // Node cannot directly launch a Windows .cmd wrapper. Invoke cmd.exe explicitly
+  // with fixed, validated arguments instead of enabling a shell for spawnSync.
+  const result = process.platform === "win32"
+    ? spawnSync(process.env.ComSpec || "cmd.exe", ["/d", "/c", [executable(command), ...args].join(" ")], options)
+    : spawnSync(executable(command), args, options);
   if (result.error && result.error.code === "ENOENT") {
     throw new Error(`${command} was not found. Install ${command === "codex" ? "Codex CLI/Desktop" : "Claude Code"} first, then run this command again.`);
   }
