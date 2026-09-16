@@ -1,0 +1,23 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "cipher-technologies",
+  "description": "Evidence-backed business research workflows from Cipher Technologies.",
+  "owner": {
+    "name": "Cipher Technologies",
+    "email": "info@ciphertechnologies.co.zw"
+  },
+  "plugins": [
+    {
+      "name": "website-leads",
+      "description": "Research publicly listed businesses that may need a new or improved website, with evidence and no outreach.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Cipher Technologies",
+        "email": "info@ciphertechnologies.co.zw"
+      },
+      "source": "./plugins/website-leads",
+      "category": "productivity",
+      "tags": ["research", "website-audit", "lead-qualification"]
+    }
+  ]
+}

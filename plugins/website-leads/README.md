@@ -1,5 +1,9 @@
 # Website Leads — V1
 
+## Claude Code compatibility
+
+This package can also be installed in Claude Code. See [CLAUDE-CODE.md](CLAUDE-CODE.md) for installation and use. The Claude and Codex editions share the same Website Leads skill, safeguards, scripts, and reference material.
+
 Website Leads is a research-only plugin for finding businesses that plausibly need a new or improved website. It produces a reviewable Excel report and evidence package, rather than an unverified list. It never sends email, messages, or calls.
 
 ## What is included

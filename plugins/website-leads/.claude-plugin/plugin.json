@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "website-leads",
+  "description": "Evidence-backed, research-only qualification of publicly listed businesses that may need a new or improved website.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Cipher Technologies",
+    "email": "info@ciphertechnologies.co.zw"
+  },
+  "homepage": "https://website-leads-plugin.lesleykaps.chatgpt.site",
+  "repository": "https://github.com/Lesleykaps/website-leads-plugin.git",
+  "license": "MIT"
+}
