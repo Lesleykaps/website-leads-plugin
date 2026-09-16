@@ -4,6 +4,17 @@
 
 This package can also be installed in Claude Code. See [CLAUDE-CODE.md](CLAUDE-CODE.md) for installation and use. The Claude and Codex editions share the same Website Leads skill, safeguards, scripts, and reference material.
 
+## npm installer
+
+After the npm package is published, users will be able to install the supported host with one explicit command:
+
+```text
+npx @cipher-technologies/website-leads codex
+npx @cipher-technologies/website-leads claude
+```
+
+The installer asks for confirmation before changing a marketplace or installing a plugin. Its source and publishing notes are in [`npm/website-leads-installer`](../../npm/website-leads-installer).
+
 Website Leads is a research-only plugin for finding businesses that plausibly need a new or improved website. It produces a reviewable Excel report and evidence package, rather than an unverified list. It never sends email, messages, or calls.
 
 ## What is included
