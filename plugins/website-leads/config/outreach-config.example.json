@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "data_directory": "<private-user-selected-folder>",
+  "registry": {
+    "mode": "local",
+    "path": "<private-user-selected-folder>/website-outreach-history.jsonl"
+  },
+  "sender": {
+    "display_name": "<your name>",
+    "business_name": "<your business>",
+    "email": "<your approved sending address>",
+    "website": "<your public website>"
+  },
+  "delivery": {
+    "provider": "none",
+    "dry_run_by_default": true,
+    "max_initial_messages_per_weekday": 10,
+    "timezone": "<IANA timezone>",
+    "allowed_days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+  }
+}

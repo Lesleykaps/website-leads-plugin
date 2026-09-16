@@ -1,6 +1,8 @@
-# Website Leads npm installer
+# Website Leads Suite npm installer
 
-This package installs the Website Leads plugin from the Cipher Technologies GitHub marketplace. It is an installer only: it does not collect data, run research, contact businesses, or transmit research records.
+This package installs the Website Leads Suite plugin from the Cipher Technologies GitHub marketplace. It is an installer only: it does not collect data, run research, contact businesses, or transmit research records.
+
+The installed suite includes research, review-ready outreach drafting, and optional approval-gated delivery. No email provider, account, credentials, or sender identity is included.
 
 ## Use after publication
 

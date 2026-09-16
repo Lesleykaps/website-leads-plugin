@@ -1,6 +1,6 @@
 # Claude Code installation
 
-Website Leads is compatible with Claude Code as a skills-only plugin. It uses the same research-only policy, evidence standards, local deduplication helper, and output schema as the Codex edition.
+Website Leads Suite is compatible with Claude Code as a skills-only plugin. It includes evidence-backed research, review-ready outreach drafting, and approval-gated delivery instructions.
 
 ## Install from the Cipher Technologies marketplace
 
@@ -15,6 +15,7 @@ Then invoke the skill as:
 
 ```text
 /website-leads:website-leads Find 10 verified website-improvement opportunities in Harare and export an XLSX report.
+/website-leads:craft-website-outreach Create a review workbook from this approved research report.
 ```
 
 For command-line installation, use:
@@ -26,7 +27,7 @@ claude plugin install website-leads@cipher-technologies
 
 ## Scope and safeguards
 
-- This is research only: it never sends messages, emails, or outreach.
+- Research and drafting never send. Delivery requires an explicitly approved row plus a user-authorized email provider.
 - It uses public business contact details only.
 - Browser checks, screenshots, Excel creation, and historical deduplication depend on the capabilities and configuration available in the user's Claude Code environment.
-- Use local persistence unless a user has deliberately configured an authenticated backend.
+- Use local persistence unless a user has deliberately configured an authenticated backend. No credentials or personal sender identity are included in the plugin.

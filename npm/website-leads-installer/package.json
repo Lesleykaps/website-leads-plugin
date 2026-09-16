@@ -1,7 +1,7 @@
 {
   "name": "@ciphertechnologies/website-leads",
-  "version": "1.0.3",
-  "description": "Explicit, cross-platform installer for the Cipher Technologies Website Leads plugin.",
+  "version": "1.1.0",
+  "description": "Explicit, cross-platform installer for the Cipher Technologies Website Leads Suite.",
   "license": "MIT",
   "author": {
     "name": "Cipher Technologies",

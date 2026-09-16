@@ -1,8 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "website-leads",
-  "description": "Evidence-backed, research-only qualification of publicly listed businesses that may need a new or improved website.",
-  "version": "1.0.0",
+  "description": "Evidence-backed website lead research, outreach drafting, and optional approval-gated delivery through a user-authorized provider.",
+  "version": "1.1.0",
   "author": {
     "name": "Cipher Technologies",
     "email": "info@ciphertechnologies.co.zw"

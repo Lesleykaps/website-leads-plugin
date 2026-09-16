@@ -1,7 +1,7 @@
 {
   "name": "website-leads",
-  "version": "1.0.0",
-  "description": "Evidence-backed public-business research for website-improvement leads.",
+  "version": "1.1.0",
+  "description": "Evidence-backed website lead research, review-ready outreach drafting, and optional approval-gated delivery.",
   "author": {"name": "Cipher Technologies", "email": "info@ciphertechnologies.co.zw", "url": "https://website-leads-plugin.lesleykaps.chatgpt.site"},
   "homepage": "https://website-leads-plugin.lesleykaps.chatgpt.site",
   "repository": "https://github.com/Lesleykaps/website-leads-plugin.git",
@@ -10,14 +10,14 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Website Leads",
-    "shortDescription": "Research verified website-improvement prospects.",
-    "longDescription": "Research-only workflow that exports auditable business leads; it never contacts prospects.",
+    "shortDescription": "Research leads, draft outreach, and deliver only approved campaigns.",
+    "longDescription": "Evidence-backed public-business research plus review-ready outreach. Delivery is optional, requires the installer's authorized email provider and explicit approval.",
     "developerName": "Cipher Technologies",
     "category": "Productivity",
     "websiteURL": "https://website-leads-plugin.lesleykaps.chatgpt.site",
     "privacyPolicyURL": "https://website-leads-plugin.lesleykaps.chatgpt.site/privacy.html",
     "termsOfServiceURL": "https://website-leads-plugin.lesleykaps.chatgpt.site/terms.html",
-    "capabilities": ["Research", "File creation"],
+    "capabilities": ["Research", "File creation", "Approval-gated delivery"],
     "defaultPrompt": ["Find 15 verified website-improvement leads in Bristol, UK."],
     "brandColor": "#126A73"
   }
