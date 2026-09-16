@@ -78,11 +78,19 @@ async function main() {
   const pluginArgs = target === "codex"
     ? ["plugin", "add", `${PLUGIN}@${MARKETPLACE}`]
     : ["plugin", "install", `${PLUGIN}@${MARKETPLACE}`];
+  const refreshArgs = target === "codex"
+    ? ["plugin", "marketplace", "upgrade", MARKETPLACE]
+    : ["plugin", "marketplace", "update", MARKETPLACE];
 
   process.stdout.write(`\nAdding the ${MARKETPLACE} marketplace…\n`);
   const marketplaceAdded = run(target, marketplaceArgs);
   if (!marketplaceAdded) {
     process.stdout.write("Marketplace add returned a message. It may already be configured; continuing with installation.\n");
+  }
+
+  process.stdout.write("Refreshing the marketplace…\n");
+  if (!run(target, refreshArgs)) {
+    throw new Error("Website Leads marketplace could not be refreshed. Check the marketplace command output above and try again.");
   }
 
   process.stdout.write("Installing Website Leads…\n");
